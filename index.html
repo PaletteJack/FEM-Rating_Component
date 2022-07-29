@@ -18,16 +18,16 @@
       <img src="images/icon-star.svg" alt="star-icon">
     </div>
     <h2>How did we do?</h2>
-    <p>Please let us know how we did with your support request. All feedback is appreciated 
+    <p>Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
-      <form id="rating" action="submit">
-      <div class="circle rating">1</div>
-      <div class="circle rating">2</div>
-      <div class="circle rating">3</div>
-      <div class="circle rating">4</div>
-      <div class="circle rating">5</div>
-      <button type="submit">SUBMIT</button>
-      </form>
+        <ul id="rating">
+          <li class="circle rating">1</li>
+          <li class="circle rating">2</li>
+          <li class="circle rating">3</li>
+          <li class="circle rating">4</li>
+          <li class="circle rating">5</li>
+        </ul>
+      <button class="subBtn" type="submit">SUBMIT</button>
   </div>
 </div>
 
@@ -35,19 +35,31 @@
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  <div class="container">
+    <div class="card">
+      <div class="img-contain" style="justify-content: center;">
+        <img src="images/illustration-thank-you.svg" alt="ty-img">
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 15px;">
+        <div class="subResult">
+          You selected <span class="result"></span> out of 5
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <h2>Thank you!</h2>
+      </div>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+    </div>
+  </div>
 
   <!-- Thank you state end -->
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="main.js"></script>
 </body>
 </html>

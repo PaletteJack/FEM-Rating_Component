@@ -66,11 +66,12 @@ html, body {
     cursor: pointer;
 }
 
-.rating:focus {
+.rating-active {
     background-color: hsl(216, 12%, 54%);
+    color: white;
 }
 
-.card #rating button{
+.subBtn{
     width: 100%;
     margin-top: 25px;
     padding: 10px;
@@ -83,7 +84,7 @@ html, body {
     background-color: #FC7613;
 }
 
-.card #rating button:hover {
+.subBtn:hover {
     background-color: hsl(0, 0%, 100%);
     color: #FC7613;
     cursor: pointer;
@@ -91,6 +92,17 @@ html, body {
 
 #rating {
     margin-top: 25px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subResult {
+  background-color: hsl(216, 12%, 8%);
+  padding: 5px 10px;
+  border-radius: 16px;
+  display: inline-block;
+  color: #FC7613;
 }
 
 .attribution { font-size: 11px; text-align: center; }
