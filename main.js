@@ -1,5 +1,7 @@
 let numbers = document.querySelectorAll('.rating');
 let subBtn = document.querySelector(".subBtn");
+let cCard = document.querySelector('.card-front');
+let result = document.querySelector('.result');
 
 numbers.forEach (btn => {
   btn.addEventListener("click", i => {
@@ -16,6 +18,7 @@ subBtn.addEventListener("click", () => {
   if (!currentBtn) {
     alert("No Rating Selected");
   } else {
-    console.log(currentBtn.innerHTML);
+    result.innerHTML = currentBtn.innerHTML;
+    cCard.classList.add('clicked');
   }
 })
